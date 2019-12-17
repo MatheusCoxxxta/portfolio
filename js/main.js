@@ -1,5 +1,6 @@
 $('.carrossel').slick({
-    dots: true,
+    speed: 900,
+    dots: false,
     autoplay: true,
-    autoplaySpeed: 2000,
-});
+    autoplaySpeed: 3100,
+}); 

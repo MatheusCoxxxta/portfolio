@@ -28,12 +28,12 @@ body
     margin: 0;
     float: left;
 }
-.titulo img 
+.titulo img /* propriedades de imagem no titulo */
 { 
     width: 400px;
     margin: 0;
 }
-.icons 
+.icons /* icones */
 {
    width: 50%;
    height: 100%;
@@ -113,27 +113,27 @@ body
     font-size: 13pt;
 }
 
-.grid_content
+.grid_content /* grid de conteudo da pagina */
 {
     background-color: white;
     width: 100%;
     height: auto;
 }
 
-.content 
+.content /* grid de width 70% para o conteudo */
 {
-    width: 70%;
+    width: 100%;
     height: auto;
     margin: 0 auto;
 }
 
-.content img
+.content img /* propriedades de imagem no conteudo */
 {
-    width: 1008px; 
-    height: 604px;
+    width: 1440px; 
+    height: 694px;
 }
 
-button.slick-prev
+button.slick-prev /* botão previously */
 {
     display: inline-block;
     font-size: 0px; 
@@ -148,7 +148,7 @@ button.slick-prev
     z-index: 9;
 }
  
-button.slick-next
+button.slick-next /* botão next */
 {
     display: inline-block;
     font-size: 0px; 
@@ -163,13 +163,13 @@ button.slick-next
     z-index: 9;
 }
 
-ul.slick-dots li
+ul.slick-dots li /* dots inline */
 {
     list-style: none;
     display: inline; 
 }
 
-.slick-dots li button 
+.slick-dots li button /* propriedades botão dos dots */
 {
     border-radius: 50%;
     font-size: 0;
@@ -177,7 +177,7 @@ ul.slick-dots li
     height: 20px;
 }
 
-.slick-dots
+.slick-dots /* posição dos dots */
 {
     position: relative;
     left: 42%;
