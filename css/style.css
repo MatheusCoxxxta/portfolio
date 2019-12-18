@@ -33,6 +33,7 @@ body
 { 
     width: 400px;
     margin: 0;
+    vertical-align: top!important;
 }
 .icons /* icones */
 {
@@ -93,15 +94,16 @@ body
     height: 100%;
     margin: 0 auto;
     border-bottom: 0 solid grey;
+    padding: 0!important;
 }
 
 .navbar ul{ /* lista da navbar */
     margin: 0;
-    padding: 27px;
+    padding: 27px!important;
 }
 
 .navbar a { /* hyperlink da navbar */
-    text-decoration: none;
+    text-decoration: none!important;
     color: grey;
     font-family: 'Courier New', Courier, monospace  ;
     text-transform: uppercase;
@@ -319,3 +321,33 @@ ul.slick-dots li /* dots inline */
     text-align: center;
     color: #fff;
 } 
+
+
+/* ------------------------------ 
+        PAGINA DE CONTATO
+   ---------------------------- */
+
+.contato /* titulo da pagina */
+{
+    width: 100%;
+    text-align: left;
+    background-color: #fff;
+    font-size: 30pt;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 7%;
+    margin-top: 100px;
+}
+
+.principal_form
+{
+    width: 50%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+#btnEnviar
+{
+    margin-bottom: 15%;
+}
