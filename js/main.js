@@ -7,10 +7,10 @@ $('.carrossel').slick({
 
 $(window).scroll(function()
 {
-	if($(this).scrollTop() > 1000)
+	if($(this).scrollTop() > 1200)
 	{
 	    $('#grid_navbar').addClass('fixed');
-	}else
+	}else if ($(this).scrollTop() < 1000)
 	{
 	    $('#grid_navbar').removeClass('fixed');
 	}

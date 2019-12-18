@@ -216,7 +216,7 @@ ul.slick-dots li /* dots inline */
 {
     width: 100%;
     text-align: center;
-    background-color: #418ab3;
+    background-color: #5E889E;
     font-size: 40pt;
     text-transform: uppercase;
     color: white;
@@ -230,8 +230,16 @@ ul.slick-dots li /* dots inline */
 .formacao_imagem /* imagem de formacao */
 {
     width: 45%;
+    height: 300px;
     float: left;
 }
+.formacao_imagem img
+{
+    margin: 5% 8%;
+    width: 370px!important;
+    height: 220px;
+}
+
 .formacao_corpo /* corpo de formacao */
 {
     width: 55%;
