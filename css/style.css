@@ -4,7 +4,10 @@ body
     margin: 0;
     background-color: #F3F3F3;
 }
-
+p
+{
+    margin-top: 15px!important;
+}
 .titulo_div /* barra de titulo */
 {
     width: 100%;
@@ -202,7 +205,7 @@ ul.slick-dots li /* dots inline */
 
 .principal /* grid principal com width 70% */
 {
-    width: 70%;
+    width: 71%;
     margin: 0 auto;
     height: 100%;
 }
@@ -350,4 +353,14 @@ ul.slick-dots li /* dots inline */
 #btnEnviar
 {
     margin-bottom: 15%;
+}
+
+/* ------------------------------ 
+           PAGINA SOBRE
+   ---------------------------- */
+
+.paragrafo
+{
+    margin: 10% auto;
+    margin-bottom: 10%;
 }
