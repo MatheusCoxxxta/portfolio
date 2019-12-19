@@ -15,3 +15,23 @@ $(window).scroll(function()
 	    $('#grid_navbar').removeClass('fixed');
 	}
 });
+
+$("#btnEnviar").click(function()
+{
+	var dados = $form.serialize();
+
+	$.ajax(
+	{
+		url: '../../../../var/www/html/PHP/envioMensagem.php',
+		type: 'post',
+		data: dados,
+		dataType:'json'
+	}).done(function(data)
+	{
+		Swal.fire({
+			icon: 'success',
+			title: 'Mensagem Enviada!',
+			text: 'Você será contatado por email em breve.'
+		});
+	});
+});
