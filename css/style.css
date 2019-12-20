@@ -149,7 +149,7 @@
     }
     .carrossel_mobile
     {
-        display: none;
+        display: none!important;
     }
     .content img /* propriedades de imagem no conteudo */
     {
