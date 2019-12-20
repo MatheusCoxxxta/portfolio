@@ -35,3 +35,64 @@ $("#btnEnviar").click(function()
 		});
 	});
 });
+
+$("#btnCalc").click(function(){
+
+	const design = $("#design option:selected").val();
+	const quant_responsivo = $("#quant_responsivo option:selected").val();
+	const foco = $("#foco option:selected").val();
+	var valorFinal = 0;
+
+	if(design == "vazio" || quant_responsivo == "vazio" || foco == "vazio")
+	{
+		Swal.fire({
+			icon: 'warning',
+			title: 'Você não preencheu tudo...'
+		});
+	}
+	else
+	{
+
+	
+		
+		
+		if(foco == "ap")
+		{
+			if(quant_responsivo == "mais5")
+			{
+				valorFinal += (18*8*5);
+				if(design == "sim") valorFinal += 80;
+				else if(design == "nao") valorFinal = valorFinal;
+			} 
+			else if(quant_responsivo == "menos5")
+			{ 
+				valorFinal += (17*8*5);
+				if(design == "sim") valorFinal += 80;
+				else if(design == "nao") valorFinal = valorFinal;
+			}
+		} 
+		else if(foco == "fn")
+		{
+			if(quant_responsivo == "menos5")
+			{
+				valorFinal += (15*8*15);
+				if(design == "sim") valorFinal += 80;
+				else if(design == "nao") valorFinal = valorFinal;
+			}
+			else if(quant_responsivo == "mais5")
+			{
+				valorFinal += (17*8*15);
+				if(design == "sim") valorFinal += 80;
+				else if(design == "nao") valorFinal = valorFinal;
+			}
+		}
+		Swal.fire({
+			icon: 'info',
+			title: 'Orçamento',
+			text: 'R$' + valorFinal,
+			footer: 'Entre em contato para mais informações e valores precisos.'
+		});
+	}
+
+	
+});

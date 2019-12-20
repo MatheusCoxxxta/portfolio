@@ -364,3 +364,27 @@ ul.slick-dots li /* dots inline */
     margin: 10% auto;
     margin-bottom: 10%;
 }
+/* ------------------------------ 
+           PAGINA SOBRE
+   ---------------------------- */
+
+.free_parag
+{
+    font-size: 23.5pt;
+}
+
+.custom-select
+{
+    width: 45%!important;
+}
+
+.btn-primary
+{
+    margin-top: 5%;
+    margin-bottom: 20%;
+}
+
+.form-group
+{
+    margin-top: 10%;
+}

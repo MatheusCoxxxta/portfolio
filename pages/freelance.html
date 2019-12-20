@@ -28,9 +28,9 @@
                 <ul>
                     <li> <a href="../index.html"> Currículo </a> </li> 
                     <li> <a href=""> Portfólio </a> </li>
-                    <li> <a href="contact.html"> Contato </a> </li>
+                    <li> <a href=""> Contato </a> </li>
                     <li> <a href="freelance.html"> Freelance </a> </li>
-                    <li> <a href=""> Sobre </a> </li>
+                    <li> <a href="../pages/about.html"> Sobre </a> </li>
                 </ul>
             </div>
 
@@ -49,40 +49,53 @@
         </div>
     </div>
 
+    
+
     <div class="grid_principal">
         <div class="principal_form">
             <div class="contato">
-                <p class="nome_paragrafo">
-                    Carta de apresentação
+                <p class="nome_paragrafo free_parag">
+                    Faça um orçamento rápido do projeto
                 </p>
             </div>
-            <div class="paragrafo">
-                <i class="fa fa-paragraph" aria-hidden="true">
-                    Me chamo Matheus Costa e me formei como técnico em informática em 2019. 
-                    Durante os três anos de curso estive estudando os processos de 
-                    desenvolvimento de software, como implementação de banco de dados, 
-                    back-end e front-end, até metodologias de trabalho. É uma área de grande 
-                    interesse para mim e venho me atualizando sempre, tanto por motivos 
-                    profissionais quanto por gostar muito de aprender novas coisas na área 
-                    de tecnologia. 
-                    Apresentei  meu trabalho de conclusão de curso em dezembro de 2019 e com ele 
-                    desenvolvi conhecimento para implementar software para gerenciamento de 
-                    campeonatos esportivos. O software foi desenvolvido para suprir necessidades 
-                    do colégio onde estudei, e é cotado para implantação a partir do ano de 2020. <br> <br> 
-                   
-                    Durante minha trajetória acadêmica, busquei conhecer e entender ferramentas 
-                    para implementação front-end e back-end para que sempre pudesse ter o maior 
-                    domínio possível sobre o projeto que estivesse desenvolvendo e para que fosse 
-                    possível auxiliar meu time em alguma necessidade fora de minha área de atuação. <br> <br>
-                    
-                    Muito obrigado por ler até aqui!
-                    
-                    <br> <br> <br>
-
-
-                    Matheus Costa
-                </i>
-            </div>
+            <form name="freelance" action=""> 
+                
+                <div class="form-group">
+                    <label for="">Você precisará de um novo design para o site?</label>
+                    <select class="custom-select" name="design" id="design">
+                        <option selected value="vazio">Selecione uma opção referente ao design do site</option>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                        
+                    </select>
+                    <small id="helpId" class="form-text text-muted"> Você já tem o design do site? </small>
+                </div>
+                
+                
+                
+                <div class="form-group">
+                    <label for=""> Quantos tipos de dispositivos irão acessar o site?</label>
+                    <select class="custom-select" name="quant_responsivo" id="quant_responsivo">
+                        <option selected value="vazio">Selecione uma quatidade aproximada</option>
+                        <option value="menos5">Menos de 5</option>
+                        <option value="mais5">Mais de 5</option>
+                         
+                    </select>
+                    <small id="helpId" class="form-text text-muted"> Será utlizado em diferentes computadores e smartphones?</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="">O site será para apresentação ou funcionalidades?</label>
+                    <select class="custom-select" name="foco" id="foco">
+                        <option selected value="vazio">Selecione o foco do produto</option>
+                        <option value="ap">Apresentação</option>
+                        <option value="fn">Funcionalidades</option>
+                        
+                    </select>
+                    <small id="helpId" class="form-text text-muted"> O site terá funcionalidades ou o foco é apresentar seus produtos? </small>
+                </div>
+                <input name="" id="btnCalc" class="btn btn-primary" type="button" value="Calcular valor aproximado">
+            </form>
             <div class="foot">
                 <div class="direitos">
                     <p> Copyright © Matheus Costa - 2019 | Todo o conteúdo deste site foi desenvolvido por Matheus Costa. </p> 
@@ -90,12 +103,12 @@
             </div>
         </div> 
     </div>
-
-
+   
+    
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="../js/main.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 </body>
 </html>
