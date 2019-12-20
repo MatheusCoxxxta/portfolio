@@ -96,3 +96,27 @@ $("#btnCalc").click(function(){
 
 	
 });
+
+$(function()
+{
+	$("#btnOpenMenu").click(function(){
+		$("#grid_navbar").attr('style', "width: 100%; z-index: 8");
+		$(".navbar").attr('style', "width: 70%; left: 0");
+		$("#btnCloseMenu").attr('style', "display: inline"); 
+		$("#btnOpenMenu").attr('style', "display: none");
+	});
+
+	$("#btnCloseMenu").click(function(){
+		$("#grid_navbar").attr('style', "height: ;");
+		$(".navbar").attr('style', "height: 0");
+		$("#btnCloseMenu").attr('style', "display: none"); 
+		$("#btnOpenMenu").attr('style', "display: inline");
+	});
+});
+
+$('.carrossel_mobile').slick({
+    speed: 900,
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 3100,
+}); 
