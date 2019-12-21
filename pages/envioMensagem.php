@@ -23,16 +23,18 @@
     $mail->setFrom("matheus271200.ms@gmail.com");
     $mail->Subject = $titulo;
     $mail->Body = $mensagem;
-    $mail->addAddress($email);
- 
+    $mail->AddAddress($email);
+    $mail->AddCC($email);
+
     $mail->Send(); 
     
 
     if( $mail->Send() )
     {
-        $resultado = array("resultado" => "send");
+        $resposta['resultado'] = array("sent");
+        $resposta['msg'] = '';
     }
-    else $resultado = array("resultado" => "erro!");
+    else $resposta['msg'] = "erro";
 
-    print json_encode($resultado);
+    json_encode($resposta);
 ?>

@@ -22,7 +22,7 @@ $("#btnEnviar").click(function()
 
 	$.ajax(
 	{
-		url: '../../../../var/www/html/PHP/envioMensagem.php',
+		url: '../pages/envioMensagem.php',
 		type: 'post',
 		data: dados,
 		dataType:'json'
