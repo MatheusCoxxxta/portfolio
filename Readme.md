@@ -1,11 +1,5 @@
 <h3 align="center"> Matheus Costa - Site </h3>
 
-
-<p align="center"> Matheus Costa
-    <br> 
-</p>
-
-
 ## 🧐 About <a name = "about"></a>
 
 Esse foi um projeto que desenvolvi em dezembro/2019 para mostrar um pouco do meu trabalho com Front-end.
